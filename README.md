@@ -1,22 +1,17 @@
-# Python Calculator
-A basic calculator developed in Python as part of my first semester in Software Engineering.
+# 🧮 Simple Python Calculator
+A basic command-line calculator developed as my first project in Software Engineering (1st Semester). This project demonstrates fundamental programming logic, user input handling, and error validation.
 
-## Description
-This project is a simple calculator built in Python that performs basic arithmetic operations based on user input.
+## 🚀 Features
+- **Basic Arithmetic:** Addition, Subtraction, Multiplication, and Division.
+- **Error Handling:** Validates division by zero and non-numeric inputs using `try-except` blocks.
+- **Clean Code:** Structured using functions for better readability.
 
-## Features
-- Addition  
-- Subtraction  
-- Multiplication  
-- Division  
-- Input validation for division by zero  
+## 🛠️ Technologies
+- **Language:** Python 3.x
+- **Concepts used:** Functions, Conditional Logic, Exception Handling.
 
-## Technologies
-- Python
-
-## How to Run
-1. Make sure you have Python installed.
-2. Download or clone this repository.
-3. Run the program using:
+## 📋 How to Run
+1. **Prerequisites:** Ensure you have [Python](https://www.python.org/downloads/) installed.
+2. **Clone the repository:**
    ```bash
-   python calculator.py
+   git clone [https://github.com/tu-usuario/python-calculator.git](https://github.com/tu-usuario/python-calculator.git)
