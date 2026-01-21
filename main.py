@@ -1,26 +1,43 @@
-#CALCULADORA EN PHYTON 
-print("Calculadora en Phyton")
-a = float(input("Ingrese el primer numero: "))
-b = float(input("Ingrese el segundo numero: "))
-#Phyton no ejecuta nada aqui, solamente ejecuta texto.
-print("Seleccione una operacion: ")
-print("1. SUMA")
-print("2. RESTA")
-print("3. MULTIPLICACION")
-print("4. DIVISION")
-opcion = input("Opcion: " )
-if opcion == "1":
-    print("RESULTADO: ", a + b)
-elif opcion == "2":
-        print("RESULTADO", a - b)    
-elif opcion == "3":
-    print("RESULTADO: ", a * b)
-elif opcion == "4":
+def show_menu():
+    print("Choose an operation:")
+    print("1. Addition")
+    print("2. Subtraction")
+    print("3. Multiplication")
+    print("4. Division")
+
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
     if b != 0:
-        print("Resultado:", a / b)
+        return a / b
     else:
-        print("No se puede dividir para 0: ")
+        return "Error: division by zero is not allowed"
+
+print("Python Calculator")
+
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+
+show_menu()
+option = input("Option: ")
+
+if option == "1":
+    print("Result:", add(num1, num2))
+elif option == "2":
+    print("Result:", subtract(num1, num2))
+elif option == "3":
+    print("Result:", multiply(num1, num2))
+elif option == "4":
+    print("Result:", divide(num1, num2))
 else:
-    print("Opcion invalida: ")    
+    print("Invalid option")
+
 
 
