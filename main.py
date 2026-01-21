@@ -1,43 +1,39 @@
-def show_menu():
-    print("Choose an operation:")
-    print("1. Addition")
-    print("2. Subtraction")
-    print("3. Multiplication")
-    print("4. Division")
+# CALCULATOR IN PYTHON
+def calculator():
+    print("CALCULATOR IN PYTHON")
+    try:
+        a = float(input("Enter the first number: "))
+        b = float(input("Enter the second number: "))
+    except ValueError:
+        print("Error: Please enter valid Numbers.")
+        return #Exit the function if there is an error
 
-def add(a, b):
-    return a + b
+    print("Select an operation: ")
+    print("1. ADDITION")
+    print("2. SUBTRACTION")
+    print("3. MULTIPLICATION")
+    print("4. DIVISION")
+    
+    opcion = input("Option: ")
 
-def subtract(a, b):
-    return a - b
-
-def multiply(a, b):
-    return a * b
-
-def divide(a, b):
-    if b != 0:
-        return a / b
+    if opcion == "1":
+        print("RESULT: ", a + b)
+    elif opcion == "2":
+        print("RESULT: ", a - b)    
+    elif opcion == "3":
+        print("RESULT: ", a * b)
+    elif opcion == "4":
+        if b != 0:
+            print("RESULT: ", a / b)
+        else:
+            print("You cannot divide by 0.")
     else:
-        return "Error: division by zero is not allowed"
+        print("Invalid option.")
 
-print("Python Calculator")
-
-num1 = float(input("Enter the first number: "))
-num2 = float(input("Enter the second number: "))
-
-show_menu()
-option = input("Option: ")
-
-if option == "1":
-    print("Result:", add(num1, num2))
-elif option == "2":
-    print("Result:", subtract(num1, num2))
-elif option == "3":
-    print("Result:", multiply(num1, num2))
-elif option == "4":
-    print("Result:", divide(num1, num2))
-else:
-    print("Invalid option")
+#This calls the function and executes everything above.
+if __name__ == "__main__":
+    calculator()
+    
 
 
 
